@@ -1,0 +1,25 @@
+#calci{
+    height: auto;
+    width: 200px;
+    border: 1px solid lightcoral;
+    margin: 0 auto;
+    background: lightpink;
+}
+input[type="text"]{
+    height: 35px;
+    width: 94%;
+    margin: 1px;
+    font-size: 25px;
+}
+button{
+    border-radius: 50%;
+    border: none;
+    width: 20%;
+    margin: 2px;
+    padding: 5px;
+    background: radial-gradient( skyblue,white);
+}
+button:hover{
+    background: radial-gradient(white,white);
+    color: black;
+}
