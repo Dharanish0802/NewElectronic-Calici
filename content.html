@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITS Rajampet</title>
+    <link rel="icon" href ="./logoaits.jpg">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav class="logo">
+            <a href="index.html"><img src="aitsbanner.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="content.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONTACT US </h1>
+    </section>
+    <!-- Contact us -->
+
+    <!-- google map section -->
+    <div class="location">
+        <h1>GOOGLE MAP</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.469296964139!2d79.13593807388375!3d14.225823986217314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb303d1a2ec65b1%3A0xeec3de65ba046b7!2sAnnamacharya%20Institute%20Of%20Technology%20%26%20Sciences!5e0!3m2!1sen!2sin!4v1699462269703!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- google map section ends -->
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Annamacharya Insitute of Technology & Sciences
+                            Thallapaka Panchayat, New Boyanapalli
+                            Rajampet, Kadapa Dist.</h5>
+                        <p> Andhra Pradesh</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>Office :08565 251863</h5>
+                        <p> Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>gajjaladharanish@gmail.com</h5>
+                        <p> Email us Your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email"name="email"placeholder="Enter Your email" required>
+                    <input type="text"name="subject"placeholder="Enter Your Subject" required>
+                    <textarea  rows="8" name="Message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+   
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Annamacharya Institute of Technology & Sciences, Rajampet is an AUTONOMOUS institution and is affiliated to JNTUA, Anantapuramu. The institute was started in the year 1998 under the auspices of Annamacharya Educational Trust in picturesque surrounding on a spacious 30 acre campus near Tallapaka, the birth place of Annamacharya, the renowned saint poet.
+        Sri. C. Gangi Reddy garu, Hon’ Secretary of Annamacharya Educational Trust. He was born in the year 1954 to Choppa Narayana Reddy and Choppa Rajamma, a farmers family in Siddulapally, very close to Thallapaka the birth place of saint poet Annamacharya. He completed his initial education in Thallapaka and then went to Sri Govindarajaswamy Degree College, Tirupathi where he completed his graduation in B.Com. He got his Post Graduate degree Master of Commerce from Sri Venkateswara University, Tirupati in the year 1977. He completed LLB in 1981 through evening college from Osmania University. He started his official career in the department of agriculture immediately after post graduation through APPSC Hyderabad but having got selected through APPSC Group-II immediately joined as Sub Register in the registration department of AP Government.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <a href="https://www.instagram.com/"target=_blank>
+        <i class="fa fa-instagram"></i></a>
+        <a href="www.linkedin.com/"target=_blank>
+        <i class="fa fa-linkedin"></i></a>
+    </div>
+    <p>Done by <i class="fa fa-heart-o"></i> Gajjala Dharanish </p>
+    <p> &copy;ANNAMACHARYA INSTITUTE OF TECHNOLOGY & SCIENCES. ALL RIGHTS RESERVED. | PRIVACY POLICY| REFUND CANCELLATION POLICY</p>
+    
+</section>
+
+    <!-- JS -->
+    <script>
+        var navLinks=document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

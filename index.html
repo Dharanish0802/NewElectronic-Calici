@@ -2,46 +2,264 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./cal.css">
+    <title>AITS Rajampet</title>
+    <link rel="icon" href ="./logoaits.jpg">
+    <link rel="shortcut icon" href="logoaits.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="calci">
-        <div id="inputfield"> 
-            <input type="text" placeholder="0" id="inputvalue">
+    <section class="header">
+        <nav class="logo">
+            
+            <a href="index.html"><img src="aitsbanner.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="content.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>AITS COLLEGE OF ENGINEERING</h1>
+            <p>Annamacharya Institute of Technology & Sciences, Rajampet is an AUTONOMOUS institution and is affiliated to JNTU, Anantapur. The institute was started in the year 1998 under the auspices of Annamacharya Educational Trust in picturesque surrounding on a spacious 30 acre campus near Tallapaka, the birth place of Annamacharya, the renowned saint poet.</p>
+            <a href=""class="hero-btn">Visit Us TO Know More</a>
         </div>
-        <div>
-            <button onclick="clearOutChar('C')">C</button>
-            <button onclick="clearAll('CE')">CE</button>
-            <button onclick="turnOff('OFF')">OFF</button>
-            <button onclick="turnOn('ON')">ON</button>
-        </div>
-        <div>
-            <button onclick="getValues(7)">7</button>
-            <button onclick="getValues(8)">8</button>
-            <button onclick="getValues(9)">9</button>
-            <button onclick="getValues('+')">+</button>
-        </div>
-        <div>
-            <button onclick="getValues(4)">4</button>
-            <button onclick="getValues(5)">5</button>
-            <button onclick="getValues(6)">6</button>
-            <button onclick="getValues('-')">-</button>
-        </div>
-        <div>
-            <button onclick="getValues(1)">1</button>
-            <button onclick="getValues(2)">2</button>
-            <button onclick="getValues(3)">3</button>
-            <button onclick="getValues('*')">*</button>
-        </div>
-        <div>
-            <button onclick="getValues('.')">.</button>
-            <button onclick="getValues(0)">0</button>
-            <button onclick="getValues('/')">/</button>
-            <button onclick="Calculate('=')">=</button>
-        </div>
+
+    </section>
+
+    <!-- Image carousel -->
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 9</div>
+      <img src="./slide1.jpg" style="width:100%;height: 80vh;">
+      
     </div>
-    <script src="./cal.js"></script>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 9</div>
+      <img src="./slide2.jpg" style="width:100%;height: 80vh;">
+     
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 9</div>
+      <img src="./slide3.jpg" style="width:100%;height: 80vh;">
+      
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 9</div>
+      <img src="./slide4.jpg" style="width:100%;height: 80vh;">
+      
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 9</div>
+      <img src="./slide5.jpg" style="width:100%;height: 80vh;">
+        
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 9</div>
+      <img src="./slide6.jpg" style="width:100%;height: 80vh;">
+        
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 9</div>
+      <img src="./slide7.jpg" style="width:100%;height: 80vh;">
+        
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 9</div>
+      <img src="./slide8.jpg" style="width:100%;height: 80vh;">
+        
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 9</div>
+      <img src="./slide9.jpg" style="width:100%;height: 80vh;">
+        
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+  </div>
+    
+    <!-- Course -->
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>We have various Courses in our college such as B. Tech, M. Tech and MBA</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>B.Tech</h3>
+                <p>CSE</p>
+                <p>ECE</p>
+                <p>EEE</p>
+                <p>MECHANICAL</p>
+                <p>CIVIL</p>
+            </div>
+            <div class="course-col">
+                <h3>M.Tech</h3>
+                <p>MTech in Biomedical Engineering.</p>
+                   <p> MTech in Metallurgical Engineering.</p>
+                   <p>MTech in Mechanical Engineering.</p> 
+                   <p> MTech Courses: Polymer Technology.</p> 
+                   <p> MTech in Automobile Engineering.</p> 
+                   
+            </div>
+            <div class="course-col">
+                <h3>MBA</h3>
+                <p>MBA in Digital Marketing.</p> 
+                  <p>  MBA in Business Analytics.</p> 
+                  <p> MBA in Data Analytics.</p> 
+                  <p>  MBA in Entrepreneurship.</p> 
+                  <p>  MBA in Finance.</p> 
+                    
+            </div>
+        </div>
+    </section>
+    
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>We have Big Campus. Feel good Environment and huge library and a lot.. Join this college and gain the knowledge AITS is like an OCEAN of endless learning.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="aitsk.jpg" alt="">
+                <div class="layer">
+                    <h3>Kadapa</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="aitsh.jpg" alt="">
+                <div class="layer">
+                    <h3>Hyderabad</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- facilities -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We have Top Class Facilitie</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="Library.jpg">
+                <h3>World Class Library</h3>
+                <p>Around 50k+ books available in our college. Our college library is rated as 1st largest library in Rajampet.</p>
+            </div>
+        
+        <div class="facilities-col">
+            <img src="ground.jpg">
+            <h3>Big Play Ground</h3>
+            <p>Our College provides best Volleyball court, Cricket Ground and U can also play some games like Shuttle, Tennis, Carroms.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="Canteen.jpg">
+            <h3>Tasty And Healthy Food</h3>
+            <p>We have good chefs who cooks and provides a healthy food in our cafeteria.</p>
+        </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h1>What Our Students Says</h1>
+        <p>Reviews by our Students.</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="dhanu.jpg" alt="">
+                <div>
+                    <p>Superb College we can explore our innovative ideas and gain knowledge</p>
+                    <h3>Dhanu</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="ganesh.jpg" alt="">
+                <div>
+                    <p>Excellent college</p>
+                    <h3>Ganesh</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Call To Action -->
+<section class="cta">
+    <h1>Enroll for our various online courses<br>Anywhere from the world</h1></br>
+    <a href=""class="hero-btn">Contact Us</a>
+</section>
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Annamacharya Institute of Technology & Sciences, Rajampet is an AUTONOMOUS institution and is affiliated to JNTUA, Anantapuramu. The institute was started in the year 1998 under the auspices of Annamacharya Educational Trust in picturesque surrounding on a spacious 30 acre campus near Tallapaka, the birth place of Annamacharya, the renowned saint poet.
+        Sri. C. Gangi Reddy garu, Hon’ Secretary of Annamacharya Educational Trust. He was born in the year 1954 to Choppa Narayana Reddy and Choppa Rajamma, a farmers family in Siddulapally, very close to Thallapaka the birth place of saint poet Annamacharya. He completed his initial education in Thallapaka and then went to Sri Govindarajaswamy Degree College, Tirupathi where he completed his graduation in B.Com. He got his Post Graduate degree Master of Commerce from Sri Venkateswara University, Tirupati in the year 1977. He completed LLB in 1981 through evening college from Osmania University. He started his official career in the department of agriculture immediately after post graduation through APPSC Hyderabad but having got selected through APPSC Group-II immediately joined as Sub Register in the registration department of AP Government.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <a href="https://www.instagram.com/"target=_blank>
+        <i class="fa fa-instagram"></i></a>
+        <a href="www.linkedin.com/"target=_blank></a>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Done by <i class="fa fa-heart-o"></i> Gajjala Dharanish </p>
+    <p> &copy;ANNAMACHARYA INSTITUTE OF TECHNOLOGY & SCIENCES. ALL RIGHTS RESERVED. | PRIVACY POLICY| REFUND CANCELLATION POLICY</p>
+    
+</section>
+
+    <!-- JS -->
+    <script>
+        var navLinks=document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+    <script src="./slider.js"></script> 
+    
 </body>
 </html>
